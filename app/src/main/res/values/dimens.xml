@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="image_width">128dip</dimen>
+    <dimen name="fab_size_normal">100dp</dimen>
+    <dimen name="fab_margin">0dp</dimen>
+    <dimen name="search_view_inset">5dp</dimen>
+    <dimen name="sliding_search_view_header_height">250dp</dimen>
+</resources>

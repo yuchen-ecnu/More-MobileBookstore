@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="PrimaryColor">#2196f3</color>
+    <color name="PrimaryDarkColor">#1976D2</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_eeeeee">#eeeeee</color>
+    <color name="color_ffffff">#ffffff</color>
+    <color name="color_c61a04">#c61a04</color>
+    <color name="color_cccccc">#cccccc</color>
+    <color name="color_d81e06">#d81e06</color>
+    <color name="color_b0b8b2">#b0b8b2</color>
+    <color name="colorBackground">#ffffff</color>
+    <!-- 网页加载进度条颜色变化 -->
+    <color name="progress1">#B9DEF5</color>
+    <color name="progress2">#CDE7F8</color>
+    <color name="progress3">#E7F3FC</color>
+
+</resources>

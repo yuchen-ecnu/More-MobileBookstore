@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="quicklib-multidex-1.0.1">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/73b75d223e751e06383fb32d47cd484480ecd34e/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/73b75d223e751e06383fb32d47cd484480ecd34e/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.quicklib/quicklib-multidex/1.0.1/be0003a4c1ffe128cbc0add140fa5a480df9a819/quicklib-multidex-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

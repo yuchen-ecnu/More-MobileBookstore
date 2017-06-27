@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cat"
+    android:versionCode="1"
+    android:versionName="1.0">
+    <!-- 权限声明 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <!-- 参数配置 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="pzGedEpkRg8ATfDPjTN9whKvGGSCiGHg" />
+
+        <!-- activity配置 -->
+        <activity
+            android:name=".activity.SplashActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.PersonDataActivity" />
+        <activity android:name=".activity.EditNameActivity" />
+        <activity android:name="io.github.xudaojie.qrcodelib.CaptureActivity" />
+        <activity android:name=".activity.TemplateActivity" />
+        <!-- service配置 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <!-- 接收器配置 -->
+        <receiver android:name="com.ta.util.netstate.TANetworkStateReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="ta.android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.BookShelfActivity"
+            android:label="@string/title_activity_book_shelf"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".activity.RecentActiveActivity" />
+        <activity android:name=".activity.DetailActivity" />
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.BookOptionActivity" />
+        <activity android:name=".activity.InfoActivity" />
+        <activity android:name=".activity.WebActivity" />
+        <activity android:name=".activity.BookLendHistoryActivity" />
+        <activity android:name=".activity.AddBookActivity" />
+        <activity android:name=".activity.ShelfBookActivity" />
+        <activity android:name=".activity.SearchResultActivity" />
+        <activity android:name=".activity.ShowBookShelfActivity" />
+        <activity android:name=".activity.ReservationSActivity" />
+
+        <!-- 友盟参数配置 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="593a02e3677baa3e380022ad" />
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="bc64d30d11076dedceb2641ad9e82710" />
+
+        <activity android:name=".activity.ReservationRActivity"></activity>
+    </application>
+
+</manifest>

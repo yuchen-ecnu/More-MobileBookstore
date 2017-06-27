@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        applicationId "com.cat"
+        minSdkVersion 21
+        targetSdkVersion 23
+        multiDexEnabled true
+
+        versionCode 1
+        versionName "1.0"
+
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a', 'x86'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+    }
+    signingConfigs {
+        release {
+            storeFile file("keystore/release.jks")
+            storePassword "meiyoumima"
+            keyAlias "release"
+            keyPassword "meiyoumima"
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            minifyEnabled false
+            debuggable true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+dependencies {
+    compile files('libs/thinkandroid-1.1-bin.jar')
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/IndoorscapeAlbumPlugin.jar')
+    compile project(path: ':library')
+    compile project(':wheelview')
+    compile project(':PushSDK')
+    compile 'com.github.arimorty:floatingsearchview:e4503289d8'
+    compile 'com.android.support:design:23.4.0'
+    compile 'de.hdodenhof:circleimageview:1.3.0'
+    compile 'com.github.XuDaojie:QRCode-Android:v0.4.2'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.github.d-max:spots-dialog:0.7@aar'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.github.johnkil.android-robototextview:robototextview:2.5.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.baoyz.swipemenulistview:library:1.3.0'
+    compile 'com.quicklib:quicklib-multidex:1.0.1'
+}

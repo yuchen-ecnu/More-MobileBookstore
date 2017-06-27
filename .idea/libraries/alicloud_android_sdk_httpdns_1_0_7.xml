@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="alicloud-android-sdk-httpdns-1.0.7">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/PushSDK/libs/alicloud-android-sdk-httpdns-1.0.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+
+        <item
+            android:id="@+id/update"
+            android:icon="@drawable/btn_getlocation"
+            android:title="将书架定位置当前位置" />
+
+
+    </group>
+</menu>

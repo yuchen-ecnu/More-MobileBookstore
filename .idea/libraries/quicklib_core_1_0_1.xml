@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="quicklib-core-1.0.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/ea2b8e981526726dab24519947c54d62c0eab62a/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/ea2b8e981526726dab24519947c54d62c0eab62a/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.quicklib/quicklib-core/1.0.1/48d731cf39f4eaaf5853a44c46eee2681377918b/quicklib-core-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

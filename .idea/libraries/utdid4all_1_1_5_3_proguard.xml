@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="utdid4all-1.1.5.3_proguard">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/PushSDK/libs/utdid4all-1.1.5.3_proguard.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
