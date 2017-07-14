@@ -4,7 +4,7 @@
 
 > **版权所有，仅供学习参考，禁止他用！**
 >
-> All rights preserve.
+> All Rights Reserved.
 >
 > 如有其他需求请联系：920901835@qq.com
 
