@@ -120,30 +120,23 @@
 ------
 
 ### Screenshot：
-
-![首页](screen/main.jpg)
-
-
-
-
-
-![菜单页](screen/menu.jpg)
-
-
-
-![我的书架](screen/mybookstore.jpg)
-
-![预约记录](screen/reversedinfo.jpg)
-
-![个人资料](screen/personalinfo.jpg)
-
-![附近的书籍](screen/nearbooks.jpg)
-
-![书籍信息](screen/bookinfo.jpg)
-
-![确认借书](screen/lendconfirm.jpg)
-
-![豆瓣书评](screen/douban.jpg)
+<table>
+  <tr>
+    <td><img src="screen/main.jpg" width = "300" height = "450" alt="首页" /></td>
+    <td><img src="screen/menu.jpg" width = "300" height = "450" alt="菜单页" /></td>
+    <td><img src="screen/mybookstore.jpg" width = "300" height = "450" alt="我的书架" /></td>
+  </tr>
+  <tr>
+    <td><img src="screen/reversedinfo.jpg" width = "300" height = "450" alt="预约记录" /></td>
+    <td><img src="screen/personalinfo.jpg" width = "300" height = "450" alt="个人资料" /></td>
+    <td><img src="screen/nearbooks.jpg" width = "300" height = "450" alt="附近的书籍" /></td>
+  </tr>
+  <tr>
+    <td><img src="screen/bookinfo.jpg" width = "300" height = "450" alt="书籍信息" /></td>
+    <td><img src="screen/lendconfirm.jpg" width = "300" height = "450" alt="确认借书" /></td>
+    <td><img src="screen/douban.jpg" width = "300" height = "450" alt="豆瓣书评" /></td>
+  </tr>
+</table>
 
 ------
 
